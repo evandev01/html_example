@@ -1,4 +1,6 @@
-# Info
+# HTML EXAMPLE
+
+### Repository Link: [GitHub](https://github.com/evandev01/html_example)
 
 ## Courses
 
