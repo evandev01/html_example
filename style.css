@@ -19,16 +19,16 @@
 .inlineRow {
 	background-color: gray;
 }
-img {
+/* img {
 	width: 150px;
 	max-width: 100%;
 	height: auto;
-}
+} */
 /* .nav {
 	margin: 20px;
 } */
 .nav-link {
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	width: 100px;
 	text-align: center;
 }
@@ -54,6 +54,12 @@ ul {
 	font-family: 'PT Sans', sans-serif;
 	color: rgba(0, 0, 0, 0.87);
 }
+@media screen and (max-width: 992px) {
+	.main {
+		flex-basis: 90%;
+	}
+}
+
 .divRow-3col {
 	margin-top: 2rem;
 	display: flex;
@@ -61,6 +67,7 @@ ul {
 	flex-wrap: wrap;
 	flex-basis: 100%;
 	justify-content: center;
+	align-items: center;
 }
 .col-3col {
 	text-align: center;
@@ -70,23 +77,25 @@ ul {
 	flex-direction: column;
 	flex-basis: 25%;
 	align-items: center;
+	justify-content: center;
 }
 .nav-item {
 	display: flex;
 	justify-content: center;
-	width: 100px;
+	/* width: 300px; */
 	max-width: 100%;
 	height: 50px;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	width: 100px;
 }
 .nav-item a {
-	width: 100px;
+	/* width: 100px; */
 	text-align: center;
 	padding: 1rem;
 	font-weight: bold;
 	text-decoration: none;
-	color: rgba(0, 0, 0, 0.87);
+	/* font-size: 1.5em; */
+	/* color: rgb(125, 170, 125) !important; */
 }
 .flexbox-h1 h1 {
 	margin-top: 1rem;
@@ -97,7 +106,10 @@ ul {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 	margin-top: 2rem;
+	background-color: gray;
+	height: 500px;
 }
 .flexCol {
 	display: flex;
@@ -105,6 +117,7 @@ ul {
 	flex-basis: 5%;
 	text-align: center;
 	justify-content: center;
+	align-items: center;
 	background-color: rgba(75, 75, 250, 0.76);
 	border: 2px solid black;
 	width: 100%;
@@ -113,9 +126,9 @@ ul {
 }
 
 @media screen and (max-width: 992px) {
-	.main {
+	/* .main {
 		flex-basis: 90%;
-	}
+	} */
 	.flexCol {
 		display: flex;
 		flex-direction: column;
@@ -127,5 +140,66 @@ ul {
 		width: 100%;
 		height: 200px;
 		font-size: large;
+	}
+}
+
+.imageCol {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+img {
+	height: 400px;
+	max-height: 100%;
+	width: auto;
+}
+
+.flexContainer {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 60%;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4rem;
+}
+.divRow {
+	display: flex;
+	flex-direction: row;
+	height: 400px;
+	background-color: rgb(31, 77, 230);
+	justify-content: center;
+}
+
+.divCol {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 20%;
+	align-items: center;
+	justify-content: center;
+}
+
+.imgDiv {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 2rem;
+	flex-wrap: wrap;
+}
+.myImage {
+	display: flex;
+	flex-direction: column;
+}
+
+.myIcon {
+	height: 200px;
+	max-height: 100%;
+	width: auto;
+}
+
+@media screen and (max-width: 576px) {
+	.flexContainer {
+		width: 90%;
 	}
 }

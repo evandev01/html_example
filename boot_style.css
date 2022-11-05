@@ -1,0 +1,9 @@
+h1 {
+	text-align: center;
+}
+
+.column3 {
+	border: 2px solid black;
+	background-color: rgba(38, 38, 223, 0.712);
+	height: 200px;
+}
